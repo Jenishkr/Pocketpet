@@ -78,6 +78,7 @@ function updateCurrentPetDisplay() {
   
   status.innerHTML = `Your ${currentPet} is ready! Click "Show Pet"<br><span class="donate-link" id="donateLink">💖Fuel my work via upi</span>`;
 
+
   
   setTimeout(() => {
     const link = document.getElementById('donateLink');
