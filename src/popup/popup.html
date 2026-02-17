@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocketpet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <h1>🐾 Pocketpet</h1>
+        <button class="settings-btn" id="settingsBtn" title="Settings">⚙️</button>
+      </div>
+      <p>Your friendly wellness buddy!</p>
+    </div>
+    
+    <div class="current-pet" id="currentPet">
+      <div id="currentPetDisplay">
+        <span style="font-size: 40px;">🐾</span>
+        <div class="pet-main-name">No pet selected</div>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button class="btn btn-primary" id="showPetBtn">
+        <span>🐱</span> Show Pet on Page
+      </button>
+      <button class="btn btn-secondary" id="changePetBtn">
+        <span>🔄</span> Change Pet
+      </button>
+    </div>
+    
+    <div id="petSelector" class="hidden">
+      <p class="section-title">Select your companion:</p>
+      <div class="pet-grid" id="petGrid"></div>
+    </div>
+    
+    <div class="status" id="status">
+      Click "Show Pet" to see your buddy!
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocketpet - Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="settings-container">
+    <div class="settings-header">
+      <h1>⚙️ Pocketpet Settings</h1>
+      <a href="popup.html" class="back-btn">← Back to Popup</a>
+    </div>
+    
+    <div class="settings-content">
+      <div class="setting-card">
+        <div class="setting-header">
+          <span class="setting-icon">👁️</span>
+          <div class="setting-title-group">
+            <h3>Show Pet All Time</h3>
+            <p>Keep your pet visible on the page continuously</p>
+          </div>
+          <label class="toggle-switch" aria-label="Toggle show pet all time">
+            <input type="checkbox" id="showAllTimeToggle" title="Show pet all time toggle">
+            <span class="toggle-slider"></span>
+          </label>
+
+        </div>
+        <div class="setting-desc">
+          When enabled, your pet will stay on the screen permanently instead of appearing at intervals.
+        </div>
+      </div>
+      
+      <div class="setting-card" id="intervalSetting">
+        <div class="setting-header">
+          <span class="setting-icon">⏱️</span>
+          <div class="setting-title-group">
+            <h3>Appearance Interval</h3>
+            <p>How often your pet appears</p>
+          </div>
+          <span class="interval-badge" id="intervalValue">2 min</span>
+        </div>
+        <div class="slider-container">
+          <input type="range" id="intervalSlider" min="30" max="300" step="10" value="120" title="Pet appearance interval slider" aria-label="Pet appearance interval in seconds">
+
+          <div class="interval-labels">
+            <span>30s</span>
+            <span>2.5min</span>
+            <span>5min</span>
+          </div>
+        </div>
+        <div class="setting-desc">
+          Set how frequently your pet appears when "Show All Time" is disabled. Range: 30 seconds to 5 minutes.
+        </div>
+      </div>
+      
+      <div class="setting-card save-card">
+        <button class="btn-save" id="saveSettingsBtn">
+          <span>💾</span> Save Settings
+        </button>
+        <div class="save-status" id="saveStatus"></div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Pocketpet - Your friendly wellness buddy! 🐾</p>
+    </div>
+  </div>
+  
+  <script src="settings.js"></script>
+</body>
+</html>

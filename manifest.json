@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Pocketpet",
+  "icons": {
+    "16": "icons/Pocketpet.png",
+    "48": "icons/Pocketpet.png",
+    "128": "icons/Pocketpet.png"
+  },
+  "version": "1.0",
+
+  "description": "A friendly virtual pet that appears on webpages to brighten your day and remind you to take care of yourself!",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+
+
+    "default_title": "Pocketpet - Click to show your pet!"
+
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "css": ["src/style.css"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["pets/*", "sounds/*", "fund/donate.svg", "src/popup/settings.html", "src/popup/settings.css", "src/popup/settings.js"],
+
+      "matches": ["<all_urls>"]
+    }
+  ]
+
+}
