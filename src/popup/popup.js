@@ -76,7 +76,8 @@ function updateCurrentPetDisplay() {
     <div class="pet-type-label">My ${currentPet.toLowerCase()}</div>
   `;
   
-  status.innerHTML = `Your ${currentPet} is ready! Click "Show Pet"<br><span class="donate-link" id="donateLink">💖Fuel my work via upi</span>`;
+  status.innerHTML = `Your ${currentPet} is ready! Click "Show Pet"<br><span class="donate-link" id="donateLink">💖Fuel my work via up</span>`;
+
 
 
   
