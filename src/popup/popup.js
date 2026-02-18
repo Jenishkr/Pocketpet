@@ -1,8 +1,3 @@
-/**
- * Pocketpet - Popup Script
- * Handles the extension popup UI and interactions
- */
-
 // Pet configuration
 const PET_CONFIG = {
   pets: ['Budgie', 'Cat', 'dog', 'Fish', 'Hamster', 'Panda', 'Rabbit', 'Turtle', 'Surprise'],

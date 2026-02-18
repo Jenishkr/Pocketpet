@@ -1,9 +1,3 @@
-/**
- * Pocketpet - Content Script
- * Handles pet display, animations, drag functionality, and user interactions
- */
-
-
 // Pet configuration - will be dynamically populated
 const PET_CONFIG = {
   pets: [], // Will be populated dynamically

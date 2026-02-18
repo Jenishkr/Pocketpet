@@ -1,8 +1,3 @@
-/**
- * Pocketpet - Settings Page Script
- * Handles the settings page functionality
- */
-
 // Default settings
 const DEFAULT_SETTINGS = {
   showAllTime: false,

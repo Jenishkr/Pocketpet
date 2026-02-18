@@ -1,9 +1,3 @@
-/**
- * Pocketpet - Background Service Worker
- * Handles timing, scheduling, and communication with content scripts
- */
-
-
 // Configuration
 const CONFIG = {
   defaultInterval: 120,  // 2 minutes in seconds
